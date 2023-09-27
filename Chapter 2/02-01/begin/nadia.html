@@ -6,19 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script type="application/ld+json">
-        {
-            "@context": "http://schema.org/Restaurant",
-            "@type":"Restaurant",
-            "name":"Nadia's Garden Restaurant",
-            "email":"nadiasgardenrestaurant@gmail.com",
-            "description":"Fantastic and fun for all your cheesy occasions",
-            "openingHours":"Tu-Su 17:30-22:00",
-            "telephone":"+11234567890",
-            "hasMenu":"http://www.nadias-garden.com/menu",
-            "servesCuisine":"American"
-        }
-
-        </script>
+    {
+      "@context": "http://schema.org",
+      "@type": "Restaurant",
+      "name": "Nadia's Garden Restaurant",
+      "image": "http://nadias-garden.com/logo.png",
+      "telephone": "123-456-7890",
+      "email": "nadiasgardenrestaurant@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6410 Via Real",
+        "addressLocality": "Carpinteria",
+        "addressRegion": "CA",
+        "postalCode": "93013"
+      },
+      "menu": "http://www.googleusercontent.com/menu.html",
+      "servesCuisine": "American",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": {
+          "@type": "DayOfWeek",
+          "name": "Tuesday through Sunday"
+        },
+        "opens": "2015-07-27T17:30",
+        "closes": "2015-07-27T22:00"
+      }
+    }
+    </script>
 </head>
 <body>
     <h1>Nadia's Garden Restaurant</h1>
